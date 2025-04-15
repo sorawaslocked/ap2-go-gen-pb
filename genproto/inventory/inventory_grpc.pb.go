@@ -4,7 +4,7 @@
 // - protoc             v6.30.2
 // source: inventory.proto
 
-package svc
+package ap2_go_gen_pb
 
 import (
 	context "context"

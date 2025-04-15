@@ -4,7 +4,7 @@
 // 	protoc        v6.30.2
 // source: inventory.proto
 
-package svc
+package ap2_go_gen_pb
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -356,7 +356,7 @@ const file_inventory_proto_rawDesc = "" +
 	"\x0eProductService\x12@\n" +
 	"\rCreateProduct\x12\x15.CreateProductRequest\x1a\x16.CreateProductResponse\"\x00\x127\n" +
 	"\n" +
-	"GetProduct\x12\x12.GetProductRequest\x1a\x13.GetProductResponse\"\x00B-Z+github.com/sorawaslocked/AP2Assignment2/svcb\x06proto3"
+	"GetProduct\x12\x12.GetProductRequest\x1a\x13.GetProductResponse\"\x00B(Z&github.com/sorawaslocked/ap2-go-gen-pbb\x06proto3"
 
 var (
 	file_inventory_proto_rawDescOnce sync.Once

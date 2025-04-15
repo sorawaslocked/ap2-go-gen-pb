@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/sorawaslocked/AP2Assignment2/svc";
+option go_package = "github.com/sorawaslocked/ap2-go-gen-pb";
 
 message Product {
   string ID = 1;
