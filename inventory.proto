@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/sorawaslocked/AP2Assignment2/svc";
+
+message Product {
+  string ID = 1;
+  string CategoryID = 2;
+  string Name = 3;
+  string Description = 4;
+  float Price = 5;
+  int32 StockLevel = 6;
+  google.protobuf.Timestamp CreatedAt = 7;
+  google.protobuf.Timestamp UpdatedAt = 8;
+}
+
+service ProductService {
+  rpc CreateProduct(CreateProductRequest) returns (CreateProductResponse) {}
+  rpc GetProduct(GetProductRequest) returns (GetProductResponse) {}
+}
+
+message CreateProductRequest {
+  string CategoryID = 1;
+  string Name = 2;
+  string Description = 3;
+  float Price = 4;
+}
+
+message CreateProductResponse {
+  string ID = 1;
+}
+
+message GetProductRequest {
+  string ID = 1;
+}
+
+message GetProductResponse {
+  Product product = 1;
+}
