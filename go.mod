@@ -1,4 +1,4 @@
-module github.com/sorawaslocked/AP2Assignment2/svc
+module github.com/sorawaslocked/ap2-go-gen-pb
 
 go 1.23
 
